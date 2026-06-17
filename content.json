@@ -1,0 +1,96 @@
+{
+  "key_facts": {
+    "Category": "Ethereum Layer 2 bridge",
+    "Network": "Blast",
+    "Token": "ETH for gas; BLAST ecosystem token",
+    "Launched": "2024",
+    "Custody": "Non-custodial bridge contracts with L2 bridge assumptions"
+  },
+  "intent": [
+    {
+      "q": "Bridge to Blast from Ethereum",
+      "a": "Bridging to Blast from Ethereum moves ETH or supported assets from Ethereum mainnet to the Blast L2 network. Users connect a wallet, choose Ethereum as source, select Blast as destination, review fees, and sign the deposit. Ethereum gas is paid on the source transaction, and Blast activity requires ETH for L2 gas. The official <a href=\"https://blast.io/en/bridge\">Blast bridge</a> is the primary destination for checking supported assets and current bridge status. Third-party bridges may offer faster routing or more assets, but their liquidity and trust assumptions differ from the official bridge."
+    },
+    {
+      "q": "Blast bridge withdrawal time",
+      "a": "Blast withdrawals from L2 to Ethereum can take longer than deposits because optimistic-rollup-style exits include finality and challenge-period assumptions. Third-party bridges may offer faster liquidity-based exits, but they charge route-specific fees and depend on available liquidity. Users should distinguish between official withdrawal settlement and a fast bridge quote. For large withdrawals, check the expected arrival time, destination token, and whether the route is a canonical exit or a liquidity bridge. Keep enough ETH on Blast to pay the transaction that starts the withdrawal."
+    },
+    {
+      "q": "Blast bridge fees and gas",
+      "a": "Blast bridge fees depend on direction and route. Depositing from Ethereum requires Ethereum gas, and interacting on Blast requires ETH as the L2 gas token. A third-party bridge may add liquidity fees, relayer costs, or slippage if the route swaps assets. The best comparison is the final received amount and expected arrival time, not just the advertised network fee. During high Ethereum gas periods, deposits from mainnet may cost much more than normal Blast transactions after funds have arrived."
+    },
+    {
+      "q": "Blast bridge vs Base or Arbitrum bridge",
+      "a": "Blast, Base, and Arbitrum are separate Ethereum L2 ecosystems with separate apps, liquidity, and bridge contracts. Blast is searched heavily for native yield, points-era history, and BLAST ecosystem access; Base is often searched for Coinbase ecosystem apps; Arbitrum is searched for deep DeFi liquidity. The best bridge choice depends on where the target app lives. Users should not bridge to Blast unless the asset, wallet, and application they want are actually supported on Blast."
+    }
+  ],
+  "compare": {
+    "title": "Blast bridge vs Base bridge",
+    "rows": [
+      ["Dimension", "Blast bridge", "Base bridge"],
+      ["Destination network", "Blast", "Base"],
+      ["Gas token", "ETH", "ETH"],
+      ["Search driver", "Blast apps, yield narrative, BLAST ecosystem", "Coinbase ecosystem, Base apps, low-cost L2 activity"],
+      ["Exit choice", "Official bridge or third-party liquidity routes", "Official/superchain bridge routes or third-party bridges"]
+    ]
+  },
+  "faq": [
+    {
+      "q": "What is the official Blast bridge?",
+      "a": "The official Blast bridge is hosted by Blast and lets users move supported assets between Ethereum and Blast. It is the safest starting point for confirming the current bridge domain and supported assets. Users may also see third-party bridge routes, but those are separate services with their own fees, liquidity, and risk assumptions. Always confirm the URL before connecting a wallet."
+    },
+    {
+      "q": "What token pays gas on Blast?",
+      "a": "Blast uses ETH for gas. After bridging to Blast, keep a small ETH balance on the Blast network to pay for swaps, approvals, claims, NFT transactions, and withdrawals. ETH on Ethereum mainnet cannot pay Blast gas until it is bridged or otherwise moved to Blast. If a wallet has tokens but transactions fail, missing Blast ETH is a common cause."
+    },
+    {
+      "q": "Can I bridge USDB or BLAST from Blast to Ethereum?",
+      "a": "Availability depends on the official bridge and third-party routes at the time of transfer. USDB, BLAST, ETH, and other Blast assets may have different withdrawal paths, exchange support, and liquidity. Before bridging out, check the destination token contract, whether the receiving exchange or app accepts it, and the expected settlement time. For large amounts, test a smaller transfer first."
+    },
+    {
+      "q": "Why is my Blast bridge transaction pending?",
+      "a": "A pending Blast bridge transaction may be waiting for Ethereum confirmation, L2 processing, a relayer step, liquidity availability, or a withdrawal finality window. Check the source transaction hash first, then the destination wallet on a Blast explorer or the bridge status page. If using a third-party bridge, use that provider's status tool because the official Blast bridge may not track external routes."
+    },
+    {
+      "q": "Is bridging to Blast reversible?",
+      "a": "A completed bridge transfer cannot be simply reversed like a card payment. To move funds back, users must start a new bridge transaction from Blast to Ethereum or another supported destination. That outbound route may have different fees and timing from the inbound deposit. Always verify destination chain, token, and wallet address before signing the original bridge transaction."
+    },
+    {
+      "q": "Does Blast have a native token?",
+      "a": "Yes, Blast has the BLAST ecosystem token, while ETH remains the gas token used for network transactions. Holding BLAST is not required to pay gas on Blast, but it may be relevant for ecosystem incentives, governance, or app-specific programs. When bridging, distinguish between BLAST as an asset and ETH as the operational token needed for transaction fees."
+    }
+  ],
+  "niche": {
+    "type": "bridge",
+    "asset": "ETH",
+    "receive": "ETH",
+    "supported_networks": ["Ethereum", "Blast"]
+  },
+  "authority": [
+    {
+      "text": "Blast bridge",
+      "url": "https://blast.io/en/bridge"
+    },
+    {
+      "text": "Blast docs",
+      "url": "https://docs.blast.io/"
+    },
+    {
+      "text": "Blast L2BEAT profile",
+      "url": "https://l2beat.com/scaling/projects/blast"
+    },
+    {
+      "text": "Blast DeFiLlama chain page",
+      "url": "https://defillama.com/chain/Blast"
+    },
+    {
+      "text": "BLAST CoinGecko page",
+      "url": "https://www.coingecko.com/en/coins/blast"
+    }
+  ],
+  "sameAs": [
+    "https://x.com/Blast_L2",
+    "https://github.com/blast-io",
+    "https://defillama.com/chain/Blast"
+  ]
+}
