@@ -1,60 +1,31 @@
-# Bridge Blast
-> Bridge Blast is an independent, non-custodial informational dashboard for understanding and tracking asset transfers between Ethereum and the Blast Layer 2 network.
+# Blast Bridge
 
-## What is Bridge Blast
-Bridge Blast explains routes, assets, contracts, fees, timing, and risks associated with bridging to or from Blast. It does not operate the Blast network, control the official bridge, or take custody of funds. Blast’s canonical bridge connects Ethereum with Blast, an EVM-compatible optimistic rollup, while third-party liquidity bridges may support additional source chains or faster exits. The dashboard helps users verify route details before interacting with an external bridge.
-
-## How it works
-A user selects a source network, destination network, and supported asset, then reviews the route and opens the relevant bridge interface. The canonical Ethereum-to-Blast route locks or processes assets through Blast’s L1 contracts and sends a cross-domain message that credits the corresponding balance on Blast. Supported stablecoin deposits can produce USDB, while qualifying ETH routes credit native ETH. Canonical withdrawals begin on Blast, pass through the optimistic-rollup proving and challenge process, and must later be finalized on Ethereum. The connected wallet signs every transaction; Bridge Blast never receives private keys or controls assets.
+> Blast Bridge tracks the routes, contracts, timing, and risks for moving ETH and tokens between Ethereum and the Blast Layer 2.
 
 ## Key facts
-- Blast Mainnet is an EVM-compatible optimistic Layer 2 with chain ID `81457`.
-- Blast Sepolia uses chain ID `168587773`.
-- ETH is the native gas asset on both Ethereum and Blast.
-- The canonical bridge connects Ethereum Mainnet and Blast Mainnet.
-- Official documentation identifies ETH, WETH, stETH, USDC, USDT, and DAI deposit paths.
-- Supported USD-denominated deposits are credited as USDB on Blast.
-- Blast supports standard ERC-20 and ERC-721 bridge contracts.
-- Canonical deposits normally complete within minutes after Ethereum confirmation and sequencer indexing.
-- Canonical Blast-to-Ethereum withdrawals take approximately seven days and require multiple transactions.
-- Bridge Blast is informational and non-custodial; bridge and rollup contracts retain their own security and upgrade assumptions.
+- Route: Ethereum Mainnet  Blast Mainnet (chain ID 81457)
+- Deposit: Typically minutes after L1 confirmation
+- Withdraw: ~7 days: proving, challenge, finalization
+- Gas: ETH is the native asset on both chains
+- Custody: Non-custodial — your wallet signs
+- Verify: Use official contracts; beware fake bridge sites
 
-## Common questions
-- **Is Bridge Blast the official Blast bridge?** No. It is an independent dashboard; the canonical interface is operated at `blast.io`.
-
-- **Who controls my funds?** Your wallet controls transaction signing. Canonical transfers interact with Blast’s bridge contracts, while third-party routes use their own contracts or liquidity providers.
-
-- **What fees apply?** Users pay source-chain gas and, where required, destination or finalization gas. Third-party routes may also charge bridge or liquidity fees shown before confirmation.
-
-- **How long does bridging take?** Canonical Ethereum deposits generally arrive within minutes. Canonical withdrawals to Ethereum take approximately seven days; liquidity bridges may be faster under different trust and fee models.
-
-- **Which assets and chains are supported?** The canonical route is Ethereum–Blast and documents ETH, WETH, stETH, USDC, USDT, DAI, and arbitrary-token bridge paths. Current availability must be checked in the selected bridge interface.
-
-- **What are the main risks?** Risks include wrong-network transfers, counterfeit tokens, malicious approvals, bridge-contract bugs, protocol upgrades, sequencer or proposer failure, delayed withdrawals, and third-party liquidity assumptions.
+## On this page
+- [What is Blast Bridge?](https://bridge-blast.github.io/#what)
+- [How bridging works](https://bridge-blast.github.io/#how)
+- [Depositing to the destination](https://bridge-blast.github.io/#deposit)
+- [Withdrawing back](https://bridge-blast.github.io/#withdraw)
+- [Time and fees](https://bridge-blast.github.io/#fees)
+- [Is Blast Bridge safe?](https://bridge-blast.github.io/#safety)
+- [Problems and fixes](https://bridge-blast.github.io/#troubleshoot)
+- [FAQ](https://bridge-blast.github.io/#faq)
 
 ## App
-- Dashboard: https://bridge-blast.github.io/
-- App: https://bridge-blast.github.io/dashboard/
+- [Blast Bridge dashboard](https://bridge-blast.github.io/)
+- [Open the app](https://bridge-blast.github.io/dashboard/)
 
-## Official resources
-Blast Website: https://blast.io/
-Official Blast Bridge: https://blast.io/en/bridge
-Blast Documentation: https://docs.blast.io/
-Mainnet Bridge Guide: https://docs.blast.io/building/bridges/mainnet
-Bridge FAQ: https://docs.blast.io/building/bridges/faq
-Network Information: https://docs.blast.io/building/network-information
-Contract Addresses: https://test-docs.blast.io/building/contracts
-Bridged Token Addresses: https://docs.blast.io/building/bridged-token-addresses
-Blast Status: https://status.blast.io/
-Official X: https://x.com/Blast
-
-## Data & references
-Blastscan: https://blastscan.io/
-L1 Bridge on Etherscan: https://etherscan.io/address/0x3a05e5d33d7ab3864d53aaec93c8301c1fa49115
-L2 Bridge on Blastscan: https://blastscan.io/address/0x4300000000000000000000000000000000000005
-L2-to-L1 Transactions: https://blastscan.io/txsExit
-Blast on L2BEAT: https://l2beat.com/scaling/projects/blast
-Blast on DefiLlama: https://defillama.com/chain/blast
-Blast on CoinGecko: https://www.coingecko.com/en/coins/blast
-ERC-20 Standard: https://eips.ethereum.org/EIPS/eip-20
-Optimistic Rollups: https://ethereum.org/developers/docs/scaling/optimistic-rollups/
+## Sources
+- [blast.io](https://blast.io/en/about)
+- [ethereum.org](https://ethereum.org/bridges)
+- [docs.optimism.io](https://docs.optimism.io/app-developers/guides/bridging/standard-bridge)
+- [coinmarketcap.com](https://coinmarketcap.com/academy/article/what-is-layer-2-blast)
