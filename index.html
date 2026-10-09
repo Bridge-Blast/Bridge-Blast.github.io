@@ -8,225 +8,247 @@
 <link rel="canonical" href="https://bridge-blast.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Blast Bridge">
+<meta property="og:description" content="Use the Blast Bridge to move ETH and stablecoins from Ethereum to the Blast L2, where balances can earn native yield. See the route, fee and time before you sign, and keep your own keys.">
 <meta property="og:url" content="https://bridge-blast.github.io/">
 <meta property="og:image" content="https://bridge-blast.github.io/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Blast Bridge">
+<meta name="twitter:description" content="Use the Blast Bridge to move ETH and stablecoins from Ethereum to the Blast L2, where balances can earn native yield. See the route, fee and time before you sign, and keep your own keys.">
+<meta name="twitter:image" content="https://bridge-blast.github.io/og.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bridge-blast.github.io/#website", "url": "https://bridge-blast.github.io/", "name": "Blast Bridge — Move ETH & Stablecoins to Blast L2"}, {"@type": "WebPage", "@id": "https://bridge-blast.github.io/#webpage", "url": "https://bridge-blast.github.io/", "name": "Blast Bridge — Move ETH & Stablecoins to Blast L2", "isPartOf": {"@id": "https://bridge-blast.github.io/#website"}, "description": "Use the Blast Bridge to move ETH and stablecoins from Ethereum to the Blast L2, where balances can earn native yield. See the route, fee and time before you sign, and keep your own keys.", "datePublished": "2026-10-09", "dateModified": "2026-10-09"}, {"@type": "SoftwareApplication", "name": "Blast Bridge", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridge-blast.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Bridges"}, {"@type": "ListItem", "position": 3, "name": "Blast Bridge"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need ETH to use the Blast Bridge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You pay Ethereum gas to deposit, and you need a little ETH on Blast to transact once your assets arrive."}}, {"@type": "Question", "name": "How long does the Blast Bridge take?", "acceptedAnswer": {"@type": "Answer", "text": "Deposits usually take minutes after Ethereum confirmations. Standard withdrawals back to Ethereum follow the rollup's challenge window and take longer."}}, {"@type": "Question", "name": "What is USDB on Blast?", "acceptedAnswer": {"@type": "Answer", "text": "USDB is the stablecoin you receive on Blast when you bridge supported stablecoins; like bridged ETH, it can earn native yield."}}, {"@type": "Question", "name": "Do I need an account to bridge to Blast?", "acceptedAnswer": {"@type": "Answer", "text": "No. You connect a self-custody wallet and bridge on-chain, with no sign-up and no custody."}}, {"@type": "Question", "name": "What happens if my deposit fails?", "acceptedAnswer": {"@type": "Answer", "text": "A failed Ethereum transaction reverts and you keep your assets, though the gas for the attempt is spent."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bridge-blast.github.io/#website", "url": "https://bridge-blast.github.io/", "name": "Blast Bridge — Move ETH & Stablecoins to Blast L2"}, {"@type": "WebPage", "@id": "https://bridge-blast.github.io/#webpage", "url": "https://bridge-blast.github.io/", "name": "Blast Bridge — Move ETH & Stablecoins to Blast L2", "isPartOf": {"@id": "https://bridge-blast.github.io/#website"}, "description": "Use the Blast Bridge to move ETH and stablecoins from Ethereum to the Blast L2, where balances can earn native yield. See the route, fee and time before you sign, and keep your own keys.", "datePublished": "2026-10-09", "dateModified": "2026-10-09"}, {"@type": "SoftwareApplication", "name": "Blast Bridge", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridge-blast.github.io/"}, {"@type": "ListItem", "position": 2, "name": "Bridges"}, {"@type": "ListItem", "position": 3, "name": "Blast Bridge"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do I need ETH to use the Blast Bridge?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You pay Ethereum gas to deposit, and you need a little ETH on Blast to transact once your assets arrive. The amount needed is small since activity on the L2 is cheap."}}, {"@type": "Question", "name": "How long does a transfer to Blast take?", "acceptedAnswer": {"@type": "Answer", "text": "Deposits usually take minutes after Ethereum confirmations. Standard withdrawals back to Ethereum follow the rollup's challenge window and take noticeably longer."}}, {"@type": "Question", "name": "What is USDB on Blast?", "acceptedAnswer": {"@type": "Answer", "text": "USDB is the stablecoin you receive when you bridge supported stablecoins such as USDC. Like bridged ETH, it earns native yield automatically while it sits in your wallet."}}, {"@type": "Question", "name": "Do I need an account to bridge to Blast?", "acceptedAnswer": {"@type": "Answer", "text": "No. You connect a self-custody wallet and bridge on-chain, with no sign-up and no custody at any point in the process."}}, {"@type": "Question", "name": "Why does bridged ETH earn yield on Blast?", "acceptedAnswer": {"@type": "Answer", "text": "Blast directs the yield its underlying protocols generate back to the ETH and USDB balances held on the chain, so a balance that crosses the Blast Bridge starts accruing without any separate staking action."}}, {"@type": "Question", "name": "Is a third-party bridge ever better than the native route?", "acceptedAnswer": {"@type": "Answer", "text": "It can be faster for a withdrawal or reach an asset the native route does not support, since it fronts liquidity instead of waiting on the challenge window. Compare it on the net amount received and the liquidity provider's track record before choosing it over the canonical path."}}, {"@type": "Question", "name": "What happens if my deposit fails?", "acceptedAnswer": {"@type": "Answer", "text": "A failed Ethereum transaction reverts and you keep your assets, though the gas spent on the attempt is lost. Nothing is credited on Blast until the deposit confirms."}}]}]}</script>
 <style>
 :root{--bg:#0B0D12;--surface:#12151C;--text:#EAEEF4;--muted:#8A93A3;--accent:#FCFC03;--accent-ink:#0B0D12;--radius:14px;--display:"Space Grotesk";--body:"Inter"}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:2rem}
 body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.7 var(--body);-webkit-font-smoothing:antialiased}
-a{color:var(--accent);text-underline-offset:.22em}
-a:hover{text-decoration-thickness:2px}
-button,input,select,textarea{font:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
 ::selection{background:var(--accent);color:var(--accent-ink)}
-.c98ca67{width:min(1180px,calc(100% - 64px));margin-inline:auto}
-.cea08bd{position:absolute;top:1rem;left:1rem;z-index:5;padding:.6rem 1rem;background:var(--surface);border-radius:var(--radius);transform:translateY(-200%)}
-.cea08bd:focus{transform:translateY(0)}
-.c6d689b{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;min-height:96px;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.c436920{display:inline-flex;align-items:center;gap:.7rem;color:var(--text);font:650 1.1rem/1.2 var(--display);text-decoration:none}
-.c0d67ec{display:grid;place-items:center;width:36px;height:36px;background:var(--accent);color:var(--accent-ink);border-radius:calc(var(--radius) * .6)}
-.c0d67ec svg{width:22px;height:22px;fill:none;stroke:var(--accent-ink);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.c7799ce{display:flex;align-items:center;gap:1.7rem}
-.c7799ce>a:not(.c938f34){color:var(--muted);font-size:.9rem;text-decoration:none}
-.c7799ce>a:hover{color:var(--text)}
-.c938f34{padding:.6rem 1rem;border:1px solid color-mix(in srgb,var(--accent) 28%,transparent);border-radius:var(--radius);background:color-mix(in srgb,var(--accent) 7%,var(--surface));font-size:.9rem;font-weight:650;text-decoration:none}
-.ce800a8{padding-top:1.8rem;font-size:.82rem;color:var(--muted)}
-.cf73e38{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:0;padding:0;list-style:none;color:var(--muted);font-size:.82rem}
-.cf73e38 ol,.cf73e38 ul{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin:0;padding:0;list-style:none}
-.cf73e38 a{color:var(--muted)}
-.cf73e38 [aria-current]{color:var(--text)}
-.c076197{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);align-items:center;gap:clamp(2rem,6vw,5.5rem);padding:3.5rem 0 5rem}
-.c7faf9c{min-width:0}
-.c46cb32{display:inline-flex;align-items:center;gap:.6rem;margin:0 0 1.4rem;color:var(--muted);font-size:.88rem}
-.c46cb32::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 10%,transparent)}
-h1{margin:0;font:550 clamp(2.6rem,4.9vw,4.65rem)/1.07 var(--display);letter-spacing:-.055em;overflow-wrap:anywhere;text-wrap:balance}
-h1 a{color:var(--accent)}
-.cf94491{max-width:48ch;margin:1.6rem 0 2rem;color:var(--muted);font-size:1.07rem;line-height:1.8}
-.c99d62e{display:inline-flex;justify-content:center;align-items:center;gap:1.6rem;min-height:54px;padding:.9rem 1.4rem;border:1px solid color-mix(in srgb,var(--accent) 70%,var(--text));border-radius:var(--radius);background:linear-gradient(135deg,var(--accent),color-mix(in srgb,var(--accent) 88%,var(--text)));color:var(--accent-ink);font-weight:650;text-decoration:none;box-shadow:0 8px 22px color-mix(in srgb,var(--accent) 20%,transparent);transition:transform .2s ease,box-shadow .2s ease}
-.c99d62e:hover{transform:translateY(-2px);box-shadow:0 12px 28px color-mix(in srgb,var(--accent) 28%,transparent)}
-.cae9178{font-size:1.25rem;line-height:1}
-.c1b5bff{margin:1rem 0 0;color:var(--muted);font-size:.8rem}
-.c329e32{position:relative;min-width:0;padding:12px;border:1px solid color-mix(in srgb,var(--accent) 15%,transparent);border-radius:calc(var(--radius) + 12px);background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 14%,var(--bg)),color-mix(in srgb,var(--accent) 3%,var(--bg)));box-shadow:0 30px 70px -25px color-mix(in srgb,var(--text) 20%,transparent)}
-.c3d5f43{padding:clamp(1.25rem,3vw,2rem);border:1px solid color-mix(in srgb,var(--text) 8%,transparent);border-radius:var(--radius);background:var(--surface);box-shadow:0 4px 14px color-mix(in srgb,var(--text) 4%,transparent)}
-.cc26444{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.65rem}
-.cc26444 h2{margin:0;font:600 1.2rem/1.3 var(--display);letter-spacing:-.025em}
-.c71a34d{display:inline-flex;align-items:center;gap:.4rem;padding:.25rem .6rem;border-radius:var(--radius);background:color-mix(in srgb,var(--accent) 9%,transparent);color:var(--accent);font-size:.72rem;white-space:nowrap}
-.c71a34d::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent)}
-.ca4f407{display:block;margin-bottom:.5rem;font-size:.83rem;font-weight:600}
-.c4e6b4a{display:flex;align-items:center;gap:.5rem;padding:.65rem 1rem;border:1px solid color-mix(in srgb,var(--text) 16%,transparent);border-radius:var(--radius);background:var(--bg);transition:border-color .2s ease}
-.c4e6b4a:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 12%,transparent)}
-.c4e6b4a input{width:100%;min-width:0;padding:.25rem 0;border:0;background:var(--bg);color:var(--text);font:550 2rem/1.3 var(--display);font-variant-numeric:tabular-nums}
-.c4e6b4a input:focus-visible{outline-offset:2px}
-.cd08fea{color:var(--muted);font-size:.8rem}
-.c04a395{margin:.5rem 0 1.3rem;color:var(--muted);font-size:.74rem}
-.c8a64b6{display:grid;grid-template-columns:minmax(0,1fr) 32px minmax(0,1fr);align-items:center;gap:.6rem;padding:1.1rem 0;border-top:1px solid color-mix(in srgb,var(--text) 8%,transparent);border-bottom:1px solid color-mix(in srgb,var(--text) 8%,transparent)}
-.cb38ec0{display:flex;flex-direction:column;align-items:center;gap:.45rem;min-width:0;color:var(--muted);font-size:.75rem}
-.c4af91c{display:flex;align-items:center;justify-content:center;min-height:52px;max-width:100%;overflow-wrap:anywhere;color:var(--text);font-weight:600}
-.c4af91c img,.c4af91c svg{display:block;max-width:100%;width:auto;height:44px;object-fit:contain}
-.c6b12b0{display:grid;place-items:center;width:32px;height:32px;border:1px solid color-mix(in srgb,var(--accent) 20%,transparent);border-radius:50%;background:color-mix(in srgb,var(--accent) 7%,var(--surface));color:var(--accent)}
-.cf0b3d8{padding:1.4rem 0 .25rem}
-.c3abb71{margin:0;color:var(--muted);font-size:.8rem}
-.cb947d2{display:flex;align-items:baseline;flex-wrap:wrap;gap:.5rem;margin:.3rem 0 1rem}
-.cb947d2 output{font:550 clamp(1.65rem,3vw,2.5rem)/1.2 var(--display);letter-spacing:-.045em;color:var(--text);overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
-.cba3298{display:grid;gap:.45rem;margin:0 0 1.2rem;font-size:.8rem}
-.cba3298>div{display:flex;justify-content:space-between;gap:1rem}
-.cba3298 dt{color:var(--muted)}
-.cba3298 dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
-.c3d5f43 .c99d62e{width:100%;justify-content:space-between;min-height:50px;font-size:.9rem}
-.c03a76e{margin:1rem 0 0;color:var(--muted);font-size:.73rem;line-height:1.65}
-.ccfc442{margin:.6rem 0 0;color:var(--text);font-size:.8rem;font-weight:600}
-.ccfc442:empty{display:none}
-.ccc619b{padding:2.1rem 2.3rem;margin-bottom:4.5rem;border:1px solid color-mix(in srgb,var(--text) 9%,transparent);border-radius:var(--radius);background:linear-gradient(115deg,var(--surface),color-mix(in srgb,var(--accent) 4%,var(--surface)))}
-.c201e21{margin:0 0 1.3rem;font:550 1.5rem/1.3 var(--display);letter-spacing:-.035em}
-.c439a25{width:100%;border-collapse:collapse;text-align:left;font-size:.92rem}
-.c439a25 caption{text-align:left;padding:0 0 1rem;color:var(--muted)}
-.c439a25 th,.c439a25 td{padding:1rem .9rem;border-bottom:1px solid color-mix(in srgb,var(--text) 9%,transparent);vertical-align:top;overflow-wrap:anywhere}
-.c439a25 th{font-weight:600;color:var(--text)}
-.c439a25 td{color:var(--muted)}
-.c439a25 th:first-child,.c439a25 td:first-child{padding-left:0}
-.c439a25 tr:last-child>*{border-bottom:0}
-.c439a25 thead th{font-size:.82rem;color:var(--muted)}
-.c71a023{max-width:820px;margin-inline:auto}
-.c029d34{padding:0 0 2.6rem;margin:0 0 2.6rem;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent);scroll-margin-top:2rem}
-.cbbe3a4{margin:0 0 1.1rem;font:550 clamp(1.7rem,3vw,2.25rem)/1.2 var(--display);letter-spacing:-.04em;text-wrap:balance;overflow-wrap:anywhere}
-.c446c59{color:var(--muted);font:400 1rem/1.85 var(--body);overflow-wrap:anywhere}
-.c446c59 p{margin:0 0 1.15rem}
-.c446c59 h3,.c446c59 h4{margin:1.6rem 0 .65rem;color:var(--text);font:600 1.25rem/1.4 var(--display)}
-.c446c59 strong{color:var(--text);font-weight:600}
-.c446c59 ul,.c446c59 ol{padding-left:1.4rem}
-.c446c59 li{padding-left:.3rem;margin:.5rem 0}
-.c446c59 li::marker{color:var(--accent)}
-.c446c59 blockquote{margin:1.5rem 0;padding:1rem 1.4rem;border-left:3px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0;background:color-mix(in srgb,var(--accent) 6%,var(--surface));color:var(--text)}
-.c446c59 img{max-width:100%;height:auto;border-radius:var(--radius)}
-.c446c59>:last-child{margin-bottom:0}
-.c89481d{margin:.8rem 0;border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--radius);background:var(--surface);overflow:hidden}
-.c2d58d8{position:relative;display:block;padding:1.25rem 3.5rem 1.25rem 1.4rem;cursor:pointer;list-style:none;color:var(--text);font:550 1.05rem/1.5 var(--display)}
-.c2d58d8::-webkit-details-marker{display:none}
-.c2d58d8::after{content:"+";position:absolute;right:1.4rem;top:1.25rem;color:var(--accent);font:400 1.4rem/1.1 var(--body)}
-.c89481d[open]>.c2d58d8::after,.c89481d details[open]>.c2d58d8::after{content:"−"}
-.c89481d[open]{border-color:color-mix(in srgb,var(--accent) 35%,transparent)}
-.c2d58d8:focus-visible{outline-offset:-5px;border-radius:var(--radius)}
-.c993a76{padding:0 1.4rem 1.4rem;color:var(--muted);font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
-.c993a76>:first-child{margin-top:0}
-.c993a76>:last-child{margin-bottom:0}
-.cb48786{max-width:820px;margin:3.5rem auto 0;padding-top:2rem;border-top:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
-.c5c744d{display:grid;gap:.7rem;margin:0;padding:0;list-style:none}
-.c56032a{padding:.85rem 1rem;border:1px solid color-mix(in srgb,var(--text) 8%,transparent);border-radius:var(--radius);background:var(--surface);color:var(--muted);font-size:.86rem;overflow-wrap:anywhere}
-.c56032a a{color:var(--text);text-decoration-color:color-mix(in srgb,var(--accent) 55%,transparent)}
-a.c56032a{display:block;color:var(--text)}
-.cc5e1cc{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:4rem;padding:1.75rem 0 2rem;border-top:1px solid color-mix(in srgb,var(--text) 10%,transparent);color:var(--muted);font-size:.8rem}
-.cc5e1cc p{margin:0}
-.cc5e1cc a{color:var(--muted)}
-@media(min-width:1500px){.c076197{padding-top:5rem;padding-bottom:6rem}}
-@media(max-width:850px){.c076197{grid-template-columns:1fr;gap:2.5rem;padding-top:2.5rem;padding-bottom:3rem}.c7faf9c{max-width:640px}.c329e32{width:100%;max-width:560px;justify-self:center}h1{font-size:clamp(2.5rem,7vw,4rem)}.cf94491{max-width:58ch}.ccc619b{margin-bottom:3rem}.c7799ce{gap:1rem}}
-@media(max-width:540px){.c98ca67{width:calc(100% - 32px)}.c6d689b{min-height:78px;gap:.75rem}.c436920{font-size:.95rem;gap:.5rem}.c0d67ec{width:30px;height:30px}.c7799ce>a:not(.c938f34){display:none}.c938f34{padding:.5rem .75rem;font-size:.8rem}.ce800a8{padding-top:1.25rem}.c076197{padding-top:2rem;gap:2rem}h1{font-size:2.65rem}.cf94491{font-size:1rem}.c7faf9c>.c99d62e{width:100%}.c1b5bff{text-align:center}.c329e32{padding:8px;border-radius:calc(var(--radius) + 8px)}.c3d5f43{padding:1.2rem}.ccc619b{padding:1.4rem 1.1rem}.c439a25{display:block;overflow-x:auto}.c439a25 th,.c439a25 td{min-width:125px;padding:.8rem .65rem}.c2d58d8{padding-left:1rem}.c993a76{padding-left:1rem;padding-right:1rem}.cc5e1cc{align-items:flex-start;flex-direction:column;margin-top:3rem}.c029d34{margin-bottom:2rem;padding-bottom:2rem}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}.c99d62e:hover{transform:none}}
+a{color:var(--text);text-underline-offset:.22em;text-decoration-thickness:1px}
+a:hover{color:var(--accent)}
+a,input,summary{touch-action:manipulation}
+:focus-visible{outline:3px solid var(--accent);outline-offset:5px}
+img,svg{max-width:100%;vertical-align:middle}
+img{height:auto}
+h1,h2,h3,h4,h5,h6{font-family:var(--display);line-height:1.15;letter-spacing:-.035em;text-wrap:balance}
+p{margin:0 0 1.25rem}
+.c590ae7{width:min(1180px,calc(100% - 4rem));margin-inline:auto}
+.c249c67{position:absolute;top:1rem;left:1rem;transform:translateY(-180%);z-index:5;padding:.65rem 1rem;background:var(--surface);border-radius:var(--radius)}
+.c249c67:focus{transform:translateY(0)}
+.cdee629{min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:2rem;border-bottom:1px solid color-mix(in srgb,var(--text) 10%,transparent)}
+.c8b6bd3{display:flex;align-items:center;gap:.75rem;font:650 1.15rem/1.2 var(--display);letter-spacing:-.035em}
+.c24afd9{display:grid;place-items:center;width:38px;height:38px;background:var(--accent);color:var(--accent-ink);border-radius:var(--radius)}
+.cec0080{width:20px;height:20px;fill:none;stroke:var(--text);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.c24afd9 .cec0080,.cd30bb1 .cec0080{stroke:var(--accent-ink)}
+.c2dd7c1{display:flex;align-items:center;gap:1.75rem;font-size:.875rem;font-weight:550}
+.c2dd7c1 a{text-decoration:none}
+.c2dd7c1 .c941cf4{padding:.6rem 1rem;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 13%,transparent);border-radius:var(--radius)}
+.cf2808d{padding-block:1.6rem .5rem;font-size:.8rem;color:var(--muted);overflow-wrap:anywhere}
+.c8942b9{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;list-style:none;padding:0;margin:0;color:var(--muted)}
+.c8942b9 a{color:var(--muted);text-decoration:none}
+.c8942b9 a:hover{color:var(--text);text-decoration:underline}
+.c7e871e{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:clamp(2rem,6vw,6rem);align-items:center;padding-block:3.5rem 5.5rem}
+.c177682{min-width:0}
+.cdb3db0{display:flex;align-items:center;gap:.6rem;margin-bottom:1.4rem;color:var(--muted);font-size:.875rem}
+.cdb3db0::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px color-mix(in srgb,var(--accent) 12%,transparent)}
+h1{font-size:clamp(2.65rem,4.7vw,4.7rem);font-weight:600;margin:0 0 1.5rem;overflow-wrap:anywhere}
+h1 em{font-style:normal;color:var(--accent)}
+.c2a1165{font-size:1.075rem;line-height:1.85;color:var(--muted);max-width:48ch;margin-bottom:2rem}
+.cd30bb1{display:inline-flex;align-items:center;justify-content:center;gap:1.4rem;min-height:52px;padding:.85rem 1.4rem;background:linear-gradient(120deg,color-mix(in srgb,var(--accent) 88%,var(--surface)),var(--accent));color:var(--accent-ink);font-weight:650;font-size:.9rem;text-decoration:none;border:1px solid color-mix(in srgb,var(--accent) 80%,var(--text));border-radius:var(--radius);box-shadow:0 5px 14px color-mix(in srgb,var(--accent) 18%,transparent);transition:transform .18s ease,box-shadow .18s ease}
+.cd30bb1:hover{color:var(--accent-ink);transform:translateY(-2px);box-shadow:0 9px 24px color-mix(in srgb,var(--accent) 25%,transparent)}
+.c145eaa{position:relative;isolation:isolate;min-width:0;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--radius);box-shadow:0 24px 65px -28px color-mix(in srgb,var(--text) 28%,transparent),0 3px 10px color-mix(in srgb,var(--text) 4%,transparent)}
+.c145eaa::before{content:"";position:absolute;inset:-1.5rem;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 80% 15%,color-mix(in srgb,var(--accent) 13%,transparent),color-mix(in srgb,var(--accent) 0%,transparent) 68%);border-radius:var(--radius)}
+.c5edfd8{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1.5rem 1.75rem;border-bottom:1px solid color-mix(in srgb,var(--text) 9%,transparent)}
+.c5edfd8 h2{font-size:1.2rem;font-weight:600;margin:0}
+.cd16a7c{font-size:.72rem;line-height:1.4;color:var(--muted);padding:.35rem .65rem;border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--radius)}
+.c0ac75c{padding:1.6rem 1.75rem 1.75rem}
+.c31afcb{display:grid;grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr);align-items:center;gap:.6rem;margin-bottom:1.5rem}
+.cef87bf{min-width:0;display:flex;align-items:center;gap:.75rem;padding:.85rem;background:var(--bg);border:1px solid color-mix(in srgb,var(--text) 7%,transparent);border-radius:var(--radius)}
+.c14f65b{font-size:.75rem;color:var(--muted)}
+.cb1a548{display:flex;align-items:center;justify-content:center;min-width:0;overflow-wrap:anywhere;line-height:1.25;font-size:.8rem}
+.cb1a548 img,.cb1a548 svg{width:32px;max-height:32px;object-fit:contain}
+.ca714e4{display:grid;place-items:center;height:36px;border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:50%}
+.c4f5e3c{display:block;margin-bottom:.5rem;font-size:.825rem;font-weight:550}
+.c702e12{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin:0 0 1.3rem}
+.c45d41f{min-width:0}
+.cb5facb{position:relative}
+.cb5facb::after{content:"";position:absolute;right:.9rem;top:50%;width:.5rem;height:.5rem;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.c67766a{width:100%;padding:.7rem 2rem .7rem .85rem;background:var(--bg);color:var(--text);border:1px solid color-mix(in srgb,var(--text) 18%,transparent);border-radius:var(--radius);font:550 .9rem/1.3 var(--body);appearance:none;-webkit-appearance:none;cursor:pointer}
+.c67766a:focus-visible{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 13%,transparent)}
+.c4a8a52{display:flex;align-items:center;gap:.5rem;padding:.8rem 1rem;background:var(--bg);border:1px solid color-mix(in srgb,var(--text) 18%,transparent);border-radius:var(--radius)}
+.c4a8a52:focus-within{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 13%,transparent)}
+.c4a8a52 input{width:100%;min-width:0;padding:0;border:0;outline:none;background:var(--bg);color:var(--text);font:550 2rem/1.3 var(--display);font-variant-numeric:tabular-nums}
+.c4a8a52 input::placeholder{color:var(--muted)}
+.c6731b5{font-size:.8rem;color:var(--muted)}
+.ce1588b{font-size:.72rem;line-height:1.6;color:var(--muted);margin:.6rem 0 1.3rem}
+.c88e0a7{font-size:.8rem;color:var(--text);margin:.6rem 0}
+[hidden]{display:none!important}
+.c54bc76{padding:1.2rem;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 10%,var(--surface)),color-mix(in srgb,var(--accent) 3%,var(--surface)));border:1px solid color-mix(in srgb,var(--accent) 18%,transparent);border-radius:var(--radius)}
+.cc4f0f5{display:block;color:var(--muted);font-size:.78rem;margin-bottom:.3rem}
+.ca79f05{display:block;font:600 clamp(1.9rem,3vw,2.6rem)/1.2 var(--display);letter-spacing:-.045em;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.c288df6{font:400 .8rem/1.5 var(--body);letter-spacing:0;color:var(--muted)}
+.c9196c9{display:grid;gap:.6rem;margin:1rem 0 0;padding-top:.9rem;border-top:1px solid color-mix(in srgb,var(--text) 10%,transparent);font-size:.8rem}
+.c9196c9 div{display:flex;justify-content:space-between;gap:1rem}
+.c9196c9 dt{color:var(--muted)}
+.c9196c9 dd{margin:0;text-align:right;font-weight:550;font-variant-numeric:tabular-nums}
+.c145eaa .cd30bb1{display:flex;width:100%;margin-top:1.25rem;justify-content:space-between}
+.cb4c22e{margin-top:1rem;color:var(--muted);font-size:.75rem}
+.cb4c22e summary{cursor:pointer;text-underline-offset:.2em}
+.cb4c22e summary:hover{color:var(--text)}
+.cb4c22e p{margin:.7rem 0 0;line-height:1.7}
+.c60e8b6{padding:2rem 2.25rem;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 10%,transparent);border-radius:var(--radius)}
+.c7af228{font-size:1.4rem;font-weight:600;margin:0 0 1.4rem}
+.cc642be{overflow-x:auto}
+.c0b181d{width:100%;border-collapse:collapse;text-align:left;font-size:.9rem}
+.c0b181d caption{text-align:left;color:var(--muted);padding-bottom:1rem}
+.c0b181d th,.c0b181d td{padding:1rem 1.1rem;border-bottom:1px solid color-mix(in srgb,var(--text) 9%,transparent);vertical-align:top;overflow-wrap:anywhere}
+.c0b181d th{font-weight:550;color:var(--muted)}
+.c0b181d th:first-child,.c0b181d td:first-child{padding-left:0}
+.c0b181d th:last-child,.c0b181d td:last-child{padding-right:0}
+.c0b181d tbody tr:last-child>*{border-bottom:0}
+.cde296e{width:min(800px,100%);margin:4.5rem auto}
+.c616352{margin-bottom:3.25rem;scroll-margin-top:2rem}
+.c7b6ae0{font:600 clamp(1.65rem,3vw,2.3rem)/1.2 var(--display);letter-spacing:-.035em;margin:0 0 1.25rem;text-wrap:balance}
+.cf9a07e{color:var(--muted);font:400 1rem/1.85 var(--body);overflow-wrap:anywhere}
+.cf9a07e h3,.cf9a07e h4{color:var(--text);margin:1.8rem 0 .8rem}
+.cf9a07e strong{color:var(--text);font-weight:600}
+.cf9a07e a,.c907ca0 a,.cf0fa27 a{text-decoration-color:color-mix(in srgb,var(--accent) 60%,var(--text))}
+.cf9a07e ul,.cf9a07e ol,.c907ca0 ul,.c907ca0 ol{padding-left:1.4rem}
+.cf9a07e li+li,.c907ca0 li+li{margin-top:.5rem}
+.cf9a07e blockquote{margin:1.8rem 0;padding:.3rem 0 .3rem 1.25rem;border-left:3px solid var(--accent);color:var(--text)}
+.cf9a07e blockquote p:last-child{margin-bottom:0}
+.cf9a07e table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse}
+.cf9a07e th,.cf9a07e td{padding:.75rem;border:1px solid color-mix(in srgb,var(--text) 12%,transparent);text-align:left}
+.cf9a07e code,.cf9a07e pre{font-family:var(--body);background:var(--surface);border-radius:var(--radius)}
+.cf9a07e pre{padding:1rem;overflow-x:auto}
+.c791e3b{margin:.85rem 0;background:var(--surface);border:1px solid color-mix(in srgb,var(--text) 11%,transparent);border-radius:var(--radius);overflow:hidden}
+.c56469f{position:relative;list-style:none;cursor:pointer;padding:1.3rem 3.8rem 1.3rem 1.4rem;font:550 1.05rem/1.5 var(--display);color:var(--text)}
+.c56469f::-webkit-details-marker{display:none}
+.c56469f::after{content:"+";position:absolute;right:1.4rem;top:1.25rem;font:400 1.4rem/1.2 var(--body);color:var(--muted)}
+.c791e3b[open]>.c56469f::after{content:"−"}
+.c791e3b[open]{border-color:color-mix(in srgb,var(--accent) 40%,transparent)}
+.c56469f:focus-visible{outline-offset:-5px}
+.c907ca0{padding:0 1.4rem 1.4rem;color:var(--muted);font-size:.95rem;line-height:1.8;overflow-wrap:anywhere}
+.c907ca0 p:last-child{margin-bottom:0}
+.c881204{padding:2rem 0 3rem;border-top:1px solid color-mix(in srgb,var(--text) 12%,transparent)}
+.cb0adac{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem 2rem;list-style:none;padding:0;margin:0}
+.cf0fa27{font-size:.85rem;color:var(--muted);overflow-wrap:anywhere;padding:.65rem 0}
+.c5f903d{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding-block:1.6rem 2rem;border-top:1px solid color-mix(in srgb,var(--text) 10%,transparent);font-size:.8rem;color:var(--muted)}
+.c5f903d p{margin:0}
+.c5f903d a{color:var(--muted)}
+@media(min-width:1500px){.c7e871e{padding-block:5rem 6rem}}
+@media(max-width:900px){.c7e871e{gap:2rem}.c5edfd8,.c0ac75c{padding:1.25rem}.cef87bf{padding:.65rem;gap:.5rem}.c2dd7c1{gap:1rem}}
+@media(max-width:760px){.c590ae7{width:calc(100% - 2.5rem)}.cdee629{min-height:80px;gap:1rem}.c2dd7c1 .c6b1eec{display:none}.c7e871e{grid-template-columns:1fr;padding-block:2.5rem 3rem;gap:2.5rem}.c177682{max-width:600px}h1{font-size:clamp(2.6rem,9vw,4rem)}.c2a1165{max-width:55ch}.c145eaa{width:100%;max-width:520px;justify-self:center}.c145eaa::before{inset:-.75rem}.c60e8b6{padding:1.5rem}.cde296e{margin-block:3rem}.cb0adac{grid-template-columns:1fr;gap:.25rem}.c5f903d{align-items:flex-start;flex-direction:column;gap:.6rem}}
+@media(max-width:380px){.c590ae7{width:calc(100% - 2rem)}.c8b6bd3{font-size:1rem;gap:.5rem}.c24afd9{width:30px;height:30px}.c2dd7c1 .c941cf4{padding:.55rem .7rem}.c5edfd8,.c0ac75c{padding:1rem}.c31afcb{gap:.4rem;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr)}.ca714e4{height:28px}.cef87bf{flex-direction:column;align-items:flex-start}.c60e8b6{padding:1.1rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cd30bb1{transition:none}}
 </style>
 </head>
-<body id="top">
-<a class="cea08bd" href="#content">Skip to content</a>
-<header class="c98ca67">
-<nav class="c6d689b" aria-label="Main navigation">
-<a class="c436920" href="#top"><span class="c0d67ec" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h15m-4-4 4 4-4 4M20 16H5m4-4-4 4 4 4"/></svg></span>Transfer tools</a>
-<div class="c7799ce"><a href="#key-facts">Key facts</a><a href="#sources">Sources</a><a class="c938f34" href="dashboard/">Open app <span aria-hidden="true">↗</span></a></div>
+<body>
+<a class="c249c67" href="#content">Skip to content</a>
+<div class="c590ae7">
+<nav class="cdee629" aria-label="Primary navigation">
+<div class="c8b6bd3"><span class="c24afd9" aria-hidden="true"><svg class="cec0080" viewBox="0 0 24 24"><path d="M5 8h14m-4-4 4 4-4 4M19 16H5m4-4-4 4 4 4"/></svg></span>Transfer guide</div>
+<div class="c2dd7c1"><a class="c6b1eec" href="#key-facts">Key facts</a><a class="c6b1eec" href="#sources">Sources</a><a class="c941cf4" href="dashboard/">Open app <span aria-hidden="true">↗</span></a></div>
 </nav>
-</header>
-<div class="c98ca67">
-<div class="ce800a8"><nav class="cf73e38" aria-label="Breadcrumb"><a href="dashboard/">Home</a> <span>/</span> <span>Bridges</span> <span>/</span> <span>Blast Bridge</span></nav></div>
-<section class="c076197" aria-labelledby="hero-title">
-<div class="c7faf9c">
-<p class="c46cb32">Plan your transfer</p>
-<h1 id="hero-title">Blast <em>Bridge</em>.</h1>
-<p class="cf94491">The Blast Bridge moves ETH and stablecoins from Ethereum to Blast, an Ethereum layer-2 where bridged ETH and USDB can earn native yield automatically. You review the route, the fee and the amount received before you sign, pay gas in ETH, and your funds stay in your own wallet the whole time.</p>
-<a class="c99d62e" href="dashboard/">Start a transfer <span class="cae9178" aria-hidden="true">↗</span></a>
-<p class="c1b5bff">Explore the route. Estimate the cost.</p>
+<div class="cf2808d"><nav class="c8942b9" aria-label="Breadcrumb"><a href="dashboard/">Home</a> <span>/</span> <span>Bridges</span> <span>/</span> <span>Blast Bridge</span></nav></div>
+<header class="c7e871e">
+<div class="c177682">
+<p class="cdb3db0">Plan your transfer</p>
+<h1>Blast <em>Bridge</em>.</h1>
+<p class="c2a1165">The Blast Bridge moves ETH and stablecoins from Ethereum to Blast, an Ethereum layer-2 where bridged ETH and USDB can earn native yield automatically. You review the route, the fee and the amount received before you sign, pay gas in ETH, and your funds stay in your own wallet the whole time.</p>
+<a class="cd30bb1" href="dashboard/">Start a transfer <svg class="cec0080" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
 </div>
-<aside class="c329e32" aria-labelledby="estimator-title">
-<div class="c3d5f43">
-<div class="cc26444"><h2 id="estimator-title">Transfer estimator</h2><span class="c71a34d">Live estimate</span></div>
-<label class="ca4f407" for="amount">Amount to send</label>
-<div class="c4e6b4a"><input id="amount" type="number" inputmode="decimal" min="1" max="1000000000" step="0.01" value="1000" aria-describedby="amount-help amount-error"><span class="cd08fea">units</span></div>
-<p class="c04a395" id="amount-help">Enter 1–1,000,000,000 units, up to two decimal places.</p>
-<p class="ccfc442" id="amount-error" aria-live="polite"></p>
-<div class="c8a64b6" aria-label="Transfer route">
-<div class="cb38ec0"><span>From</span><div class="c4af91c"><img src="assets/tokens/eth.svg" alt="Ethereum" width="28" height="28"></div></div>
-<span class="c6b12b0" aria-hidden="true">→</span>
-<div class="cb38ec0"><span>To</span><div class="c4af91c"></div></div>
+<aside class="c145eaa" aria-labelledby="estimator-title">
+<div class="c5edfd8"><h2 id="estimator-title">Transfer estimator</h2><span class="cd16a7c">Fee &amp; time</span></div>
+<div class="c0ac75c">
+<div class="c31afcb">
+<div class="cef87bf"><span class="c14f65b">From</span><div class="cb1a548"><img src="assets/tokens/eth.svg" alt="Ethereum" width="28" height="28"></div></div>
+<span class="ca714e4" aria-hidden="true"><svg class="cec0080" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></svg></span>
+<div class="cef87bf"><span class="c14f65b">To</span><div class="cb1a548"></div></div>
 </div>
-<div class="cf0b3d8" aria-live="polite" aria-atomic="true">
-<p class="c3abb71">Estimated amount after fee</p>
-<div class="cb947d2"><output id="received" for="amount">998.25</output><span class="cd08fea">units</span></div>
-<dl class="cba3298">
-<div><dt>Estimated fee</dt><dd><output id="fee" for="amount">1.75</output> units</dd></div>
-<div><dt>Estimated time</dt><dd><output id="time" for="amount">5–7 min</output></dd></div>
-</dl>
+<label class="c4f5e3c" for="amount">Amount to send</label>
+<div class="c4a8a52"><input id="amount" type="text" inputmode="decimal" value="1000" maxlength="20" autocomplete="off" spellcheck="false" aria-describedby="amount-help amount-error"><span class="c6731b5">units</span></div>
+<p class="ce1588b" id="amount-help">Enter 1–1,000,000 units. Use a point or comma for decimals.</p>
+<p class="c88e0a7" id="amount-error" role="status" hidden></p>
+<div class="c702e12">
+<div class="c45d41f"><label class="c4f5e3c" for="speed">Transfer speed</label><div class="cb5facb"><select id="speed" class="c67766a"><option value="std">Standard</option><option value="fast">Fast</option><option value="prio">Priority</option></select></div></div>
+<div class="c45d41f"><label class="c4f5e3c" for="load">Network load</label><div class="cb5facb"><select id="load" class="c67766a"><option value="normal">Normal</option><option value="busy">Busy</option></select></div></div>
 </div>
-<a class="c99d62e" href="dashboard/">Continue <span class="cae9178" aria-hidden="true">→</span></a>
-<p class="c03a76e">Fee = 0.15% of the amount + 0.25 units. Time starts at 2–4 minutes, adding one minute for every tenfold increase from 1 unit, rounded up.</p>
-<noscript><p class="c04a395">Enable JavaScript to update the estimate as you change the amount.</p></noscript>
+<div class="c54bc76" aria-live="polite" aria-atomic="true">
+<span class="cc4f0f5">Estimated amount after fee</span>
+<div class="ca79f05"><output id="net" for="amount">—</output> <span class="c288df6">units</span></div>
+<dl class="c9196c9"><div><dt>Estimated fee</dt><dd><output id="fee" for="amount">—</output></dd></div><div><dt>Estimated time</dt><dd><output id="time" for="amount">—</output></dd></div></dl>
+</div>
+<a class="cd30bb1" href="dashboard/">Continue to dashboard <svg class="cec0080" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+<details class="cb4c22e"><summary>How the estimate is calculated</summary><p>Fee = 0.50 units + 0.25% of the amount, rounded to two decimals. The remaining amount is the input minus the fee. Time starts at 2 minutes and adds one minute per tenfold increase in amount, rounded up; the upper estimate adds 3 minutes.</p></details>
+<noscript><p class="ce1588b">Enable JavaScript to calculate the fee and time from your amount.</p></noscript>
 </div>
 </aside>
-</section>
-<section class="ccc619b" id="key-facts" aria-labelledby="facts-title">
-<h2 class="c201e21" id="facts-title">Key facts</h2>
-<table class="c439a25"><tbody><tr><th scope="row">From / to</th><td>Ethereum → Blast L2</td></tr>
+</header>
+<section class="c60e8b6" id="key-facts" aria-labelledby="facts-title"><h2 class="c7af228" id="facts-title">Key facts</h2><div class="cc642be"><table class="c0b181d"><tbody><tr><th scope="row">From / to</th><td>Ethereum → Blast L2</td></tr>
 <tr><th scope="row">Assets</th><td>ETH, USDC / USDB and more</td></tr>
 <tr><th scope="row">Gas</th><td>Paid in ETH</td></tr>
-<tr><th scope="row">Note</th><td>Bridged balances can earn native yield</td></tr>
-<tr><th scope="row">Custody</th><td>Self-custody — you hold your keys</td></tr></tbody></table>
-</section>
-<main class="c71a023" id="content">
-<section class="c029d34"><h2 class="cbbe3a4">How to use the Blast Bridge</h2><div class="c446c59"><strong>Connect a wallet, choose the asset and amount, and confirm.</strong> To use the Blast Bridge you select ETH or a stablecoin on Ethereum, review the route, the fee and the amount that will arrive on Blast, then approve and sign. Assets appear on the L2 after the source transaction confirms, and nothing moves until you sign.</div></section>
-<section class="c029d34"><h2 class="cbbe3a4">Blast Bridge fees and time</h2><div class="c446c59">The Blast Bridge costs the Ethereum gas to send plus any protocol fee; transacting on Blast afterwards is cheap like other L2s. Deposits settle after Ethereum confirmations, usually minutes; standard withdrawals back to Ethereum follow the rollup's challenge window. The quote shows the amount received before you commit.</div></section>
-<section class="c029d34"><h2 class="cbbe3a4">What you can bridge to Blast</h2><div class="c446c59">You can bridge ETH and stablecoins such as USDC, received on Blast as ETH and USDB, where they can accrue native yield while they sit in your wallet. The interface lists the assets a given route supports and the expected amount for each.</div></section>
-<section class="c029d34"><h2 class="cbbe3a4">Is the Blast Bridge safe to use?</h2><div class="c446c59">A self-custody bridge keeps your keys in your wallet. Confirm the destination token's contract address, the amount received and the approval you grant, prefer a limited approval, and keep a little ETH for gas on Blast. Treat any seed-phrase request as fraud.</div></section>
-<section class="c029d34"><h2 class="cbbe3a4">Native Blast Bridge vs third-party routes</h2><div class="c446c59">The native Blast Bridge is the canonical deposit route from Ethereum; third-party bridges can be faster for withdrawals or reach more assets, at the cost of another contract and fee. Judge any route by the <strong>net amount received</strong> and prefer audited options with deep liquidity.</div></section>
-<details class="c89481d"><summary class="c2d58d8">Do I need ETH to use the Blast Bridge?</summary><div class="c993a76">Yes. You pay Ethereum gas to deposit, and you need a little ETH on Blast to transact once your assets arrive.</div></details>
-<details class="c89481d"><summary class="c2d58d8">How long does the Blast Bridge take?</summary><div class="c993a76">Deposits usually take minutes after Ethereum confirmations. Standard withdrawals back to Ethereum follow the rollup's challenge window and take longer.</div></details>
-<details class="c89481d"><summary class="c2d58d8">What is USDB on Blast?</summary><div class="c993a76">USDB is the stablecoin you receive on Blast when you bridge supported stablecoins; like bridged ETH, it can earn native yield.</div></details>
-<details class="c89481d"><summary class="c2d58d8">Do I need an account to bridge to Blast?</summary><div class="c993a76">No. You connect a self-custody wallet and bridge on-chain, with no sign-up and no custody.</div></details>
-<details class="c89481d"><summary class="c2d58d8">What happens if my deposit fails?</summary><div class="c993a76">A failed Ethereum transaction reverts and you keep your assets, though the gas for the attempt is spent.</div></details>
+<tr><th scope="row">Yield</th><td>Bridged ETH and USDB earn native yield automatically</td></tr>
+<tr><th scope="row">Deposit time</th><td>Minutes, after Ethereum confirmations</td></tr>
+<tr><th scope="row">Custody</th><td>Self-custody — you hold your keys</td></tr></tbody></table></div></section>
+<main class="cde296e" id="content" tabindex="-1">
+<section class="c616352"><h2 class="c7b6ae0">How the Blast Bridge works</h2><div class="cf9a07e"><strong>The Blast Bridge locks your ETH or stablecoin on Ethereum and mints the matching balance on Blast, an Ethereum layer-2 where that balance can start earning native yield automatically.</strong> You connect a self-custody wallet, pick the asset and the amount, and the interface shows the fee and the amount that will arrive before you sign anything. Once you approve, the deposit transaction goes to Ethereum, and after it confirms your balance shows up on the L2, usually within minutes. Withdrawals run the other way: you start the exit on Blast, wait out the rollup's challenge window, then claim the asset back on Ethereum. Nothing about the process touches a custodian — the contracts move the asset, and your keys never leave your wallet.<h3>Why Blast pays yield on bridged assets</h3>Blast routes the yield its underlying protocols generate back to the ETH and stablecoin balances sitting on the chain, so assets that cross the Blast Bridge begin accruing automatically rather than sitting idle the way a balance on most other L2s would. You do not stake or lock anything separately — holding bridged ETH or USDB in your wallet is enough.<h3>What happens on each side of a transfer</h3>On Ethereum, the bridge contract receives your deposit and emits a message Blast's network picks up. On the L2, that message mints the equivalent balance to your address — ETH arrives as ETH, and supported stablecoins arrive as USDB. The reverse path burns the asset on Blast and releases it on Ethereum once the exit has finalized.</div></section>
+<section class="c616352"><h2 class="c7b6ae0">Blast Bridge fees and timing</h2><div class="cf9a07e">A Blast Bridge deposit costs the Ethereum gas needed to run the transaction, plus any small protocol fee the route adds; the quote shows the exact amount you will receive before you commit. Transacting on Blast itself afterward is cheap, in line with other L2s, since execution happens off Ethereum's base layer. Timing is not symmetric: deposits settle a few minutes after Ethereum confirms your transaction, while withdrawals back to Ethereum wait out the rollup's challenge window, which takes longer. The table below sets out what to expect at each stage.<table><thead><tr><th>Direction</th><th>What you pay</th><th>Typical time</th></tr></thead><tbody><tr><td>Deposit to Blast</td><td>Ethereum gas + protocol fee</td><td>Minutes after confirmations</td></tr><tr><td>Activity on Blast</td><td>Low L2 gas in ETH</td><td>Seconds</td></tr><tr><td>Withdrawal to Ethereum</td><td>Blast gas, then Ethereum gas to finalize</td><td>Challenge window</td></tr></tbody></table></div></section>
+<section class="c616352"><h2 class="c7b6ae0">What you can bridge to Blast</h2><div class="cf9a07e">You can bridge ETH and major stablecoins such as USDC, which arrive on Blast as ETH and USDB. Both sides keep the asset usable immediately — bridged ETH pays gas on the L2, and USDB spends like any stablecoin while it earns yield in the background. The interface lists exactly which assets a given route supports and the amount each one will arrive as, so you know before you sign whether you are receiving USDB or a wrapped token.<h3>ETH on Blast</h3>ETH that crosses to Blast keeps its role as the network's gas asset, so the same balance you move for yield also covers your transaction fees once you start using the L2.<h3>USDB and other stablecoins</h3>Stablecoins such as USDC convert to USDB on arrival. USDB is designed to earn its native yield automatically, so a stablecoin that moves across keeps working for you rather than sitting flat in your wallet.</div></section>
+<section class="c616352"><h2 class="c7b6ae0">Blast Bridge step by step</h2><div class="cf9a07e">The flow is identical every time you use it, which is what makes a Blast Bridge transfer predictable once you have done it once.<ul><li>Connect a self-custody wallet and select Ethereum as the source, Blast as the destination.</li><li>Choose ETH or a supported stablecoin and enter the amount.</li><li>Review the fee and the amount that will arrive on Blast, then approve the token if needed.</li><li>Sign the deposit transaction and pay Ethereum gas.</li><li>Wait for Ethereum confirmations — the balance appears on Blast a few minutes later, already earning yield.</li><li>To exit, start a withdrawal on Blast, wait for the challenge window, then claim on Ethereum.</li></ul></div></section>
+<section class="c616352"><h2 class="c7b6ae0">Is the Blast Bridge safe to use?</h2><div class="cf9a07e">A self-custody Blast Bridge never takes control of your assets — the contracts move value between chains while your wallet keeps the keys the entire time. The risks you actually control sit at the moment you sign: the destination contract address, the amount you are set to receive, and the approval you grant.<h3>Approvals worth checking</h3>Grant a limited approval rather than an unlimited one, so a contract can only ever move the amount you intend, and revoke any old allowance you no longer use. Fewer standing approvals mean less surface for any single exploit to reach.<h3>The one rule that never changes</h3>No bridge, wallet or support channel ever needs your seed phrase. A real Blast Bridge only asks you to sign a transaction you can read in your own wallet — it never asks you to type or paste your recovery words anywhere, and any request that does is fraud.</div></section>
+<section class="c616352"><h2 class="c7b6ae0">Earning native yield once you're on Blast</h2><div class="cf9a07e">Once ETH or USDB lands on the L2, it starts accruing native yield without any extra staking step — the balance sitting in your wallet is the position. From there you can also use Blast's DeFi apps, lending markets and liquidity pools, which layer additional return on top of the base yield if you choose to put the asset to work rather than hold it passively. Keep a small ETH balance on the L2 for gas so a swap or a future withdrawal never stalls for want of fee money.</div></section>
+<section class="c616352"><h2 class="c7b6ae0">Native Blast Bridge vs third-party routes</h2><div class="cf9a07e">The native Blast Bridge is the canonical deposit path from Ethereum and the one that mints the official representation of your asset on the L2. Third-party bridges can be faster for withdrawals, since they front liquidity instead of waiting on the challenge window, and some reach assets the native route does not support — but each one adds its own contract and its own fee. Judge any route, native or third-party, by the <strong>net amount received</strong> after gas and fees, and prefer options with deep liquidity and a track record of audits. For a first deposit or a long-term position, the native route remains the simplest choice.</div></section>
+<details class="c791e3b"><summary class="c56469f">Do I need ETH to use the Blast Bridge?</summary><div class="c907ca0">Yes. You pay Ethereum gas to deposit, and you need a little ETH on Blast to transact once your assets arrive. The amount needed is small since activity on the L2 is cheap.</div></details>
+<details class="c791e3b"><summary class="c56469f">How long does a transfer to Blast take?</summary><div class="c907ca0">Deposits usually take minutes after Ethereum confirmations. Standard withdrawals back to Ethereum follow the rollup's challenge window and take noticeably longer.</div></details>
+<details class="c791e3b"><summary class="c56469f">What is USDB on Blast?</summary><div class="c907ca0">USDB is the stablecoin you receive when you bridge supported stablecoins such as USDC. Like bridged ETH, it earns native yield automatically while it sits in your wallet.</div></details>
+<details class="c791e3b"><summary class="c56469f">Do I need an account to bridge to Blast?</summary><div class="c907ca0">No. You connect a self-custody wallet and bridge on-chain, with no sign-up and no custody at any point in the process.</div></details>
+<details class="c791e3b"><summary class="c56469f">Why does bridged ETH earn yield on Blast?</summary><div class="c907ca0">Blast directs the yield its underlying protocols generate back to the ETH and USDB balances held on the chain, so a balance that crosses the Blast Bridge starts accruing without any separate staking action.</div></details>
+<details class="c791e3b"><summary class="c56469f">Is a third-party bridge ever better than the native route?</summary><div class="c907ca0">It can be faster for a withdrawal or reach an asset the native route does not support, since it fronts liquidity instead of waiting on the challenge window. Compare it on the net amount received and the liquidity provider's track record before choosing it over the canonical path.</div></details>
+<details class="c791e3b"><summary class="c56469f">What happens if my deposit fails?</summary><div class="c907ca0">A failed Ethereum transaction reverts and you keep your assets, though the gas spent on the attempt is lost. Nothing is credited on Blast until the deposit confirms.</div></details>
 </main>
-<section class="cb48786" id="sources" aria-labelledby="sources-title">
-<h2 class="c201e21" id="sources-title">Sources</h2>
-<ul class="c5c744d"><li><a class="c56032a" href="https://docs.blast.io/" rel="nofollow noopener" target="_blank">Blast documentation</a></li>
-<li><a class="c56032a" href="https://l2beat.com/scaling/projects/blast" rel="nofollow noopener" target="_blank">Blast on L2BEAT</a></li>
-<li><a class="c56032a" href="https://blastscan.io/" rel="nofollow noopener" target="_blank">Blastscan explorer</a></li></ul>
-</section>
-<footer class="cc5e1cc"><p>Updated Oct 09, 2026</p><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
+<section class="c881204" id="sources" aria-labelledby="sources-title"><h2 class="c7af228" id="sources-title">Sources</h2><ul class="cb0adac"><li><a class="cf0fa27" href="https://docs.blast.io/" rel="nofollow noopener" target="_blank">Blast documentation</a></li>
+<li><a class="cf0fa27" href="https://l2beat.com/scaling/projects/blast" rel="nofollow noopener" target="_blank">Blast on L2BEAT</a></li>
+<li><a class="cf0fa27" href="https://blastscan.io/" rel="nofollow noopener" target="_blank">Blastscan explorer</a></li></ul></section>
+<footer class="c5f903d"><p>Updated Oct 09, 2026</p><a href="#key-facts">Back to key facts <span aria-hidden="true">↑</span></a></footer>
 </div>
 <script>
 (() => {
   const amount = document.getElementById('amount');
-  const received = document.getElementById('received');
+  const net = document.getElementById('net');
   const fee = document.getElementById('fee');
   const time = document.getElementById('time');
   const error = document.getElementById('amount-error');
+  const speed = document.getElementById('speed');
+  const load = document.getElementById('load');
+  const SPEED = { std: [1, 1], fast: [1.6, 0.5], prio: [2.4, 0.3] };
+  const LOAD = { normal: 0, busy: 3 };
   const format = new Intl.NumberFormat('en', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   let timer;
   function update() {
-    const value = amount.valueAsNumber;
-    if (!Number.isFinite(value) || !amount.validity.valid) {
+    const raw = amount.value.trim();
+    const validFormat = /^(?:\d+(?:[.,]\d{1,2})?|[.,]\d{1,2})$/.test(raw);
+    const value = Number(raw.replace(',', '.'));
+    if (!validFormat || !Number.isFinite(value) || value < 1 || value > 1000000) {
       amount.setAttribute('aria-invalid', 'true');
-      error.textContent = 'Enter an amount from 1 to 1,000,000,000 with up to two decimal places.';
-      received.value = '—';
-      fee.value = '—';
-      time.value = '—';
+      error.textContent = raw === '' ? 'Enter an amount to calculate your estimate.' : 'Enter a number from 1 to 1,000,000 with up to two decimal places.';
+      error.hidden = false;
+      net.textContent = '—';
+      fee.textContent = '—';
+      time.textContent = '—';
       return;
     }
     amount.removeAttribute('aria-invalid');
+    error.hidden = true;
     error.textContent = '';
+    const [feeMul, timeMul] = SPEED[speed.value] || SPEED.std;
+    const extra = LOAD[load.value] || 0;
     const amountCents = Math.round(value * 100);
-    const feeCents = Math.round(amountCents * 0.0015 + 25);
-    const minutes = 2 + Math.ceil(Math.log10(value));
-    received.value = format.format((amountCents - feeCents) / 100);
-    fee.value = format.format(feeCents / 100);
-    time.value = minutes + '–' + (minutes + 2) + ' min';
+    const feeCents = Math.round((50 + amountCents * 0.0025) * feeMul);
+    const base = Math.max(1, Math.round((2 + Math.ceil(Math.log10(value))) * timeMul));
+    const minutes = base + extra;
+    net.textContent = format.format((amountCents - feeCents) / 100);
+    fee.textContent = format.format(feeCents / 100) + ' units';
+    time.textContent = minutes + '–' + (minutes + 3) + ' min';
   }
   amount.addEventListener('input', () => {
     clearTimeout(timer);
@@ -236,6 +258,8 @@ a.c56032a{display:block;color:var(--text)}
     clearTimeout(timer);
     update();
   });
+  speed.addEventListener('change', update);
+  load.addEventListener('change', update);
   update();
 })();
 </script>
