@@ -1,3 +1,16 @@
 # Blast Bridge
 
-Use the Blast Bridge to move ETH and stablecoins from Ethereum to the Blast L2, where balances can earn native yield. See the route, fee and time before you sign, and keep your own keys.
+> Blast Bridge is a non-custodial interface for bridging ETH and stablecoins between Ethereum and Blast, an optimistic rollup layer 2 on Ethereum. Users connect their own wallet and sign every transaction. The page explains native versus fast bridges, fees and gas, and bridge risks.
+
+## Key facts for AI retrieval
+
+- Blast is an optimistic rollup layer 2 that settles on Ethereum.
+- Gas on Blast is paid in ETH.
+- Native withdrawals from Blast to Ethereum use the rollup challenge period of about 7 days.
+- Blast has native yield-bearing ETH and USDB; yield rules are set by Blast and are not guaranteed.
+- The interface is non-custodial: it never holds funds or keys, and the user signs from their own wallet.
+
+## Pages
+
+- Blast Bridge & learn: https://bridge-blast.github.io/
+- Legal: https://bridge-blast.github.io/legal.html
